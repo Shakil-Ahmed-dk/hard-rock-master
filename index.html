@@ -282,8 +282,10 @@
                     const mainLyricsData = lyricsData.lyrics; 
 
                     document.getElementById(lyrics).innerText = mainLyricsData;
+                    if(lyrics == "lyrics"){
                     document.getElementById('albumTitleHead').innerText = album +' - '+author;
                     msgShowHide("lyricsHead", "block");
+                    }
                     msgShowHide(lyrics, "block");
 
                  })
